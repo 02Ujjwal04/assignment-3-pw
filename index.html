@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Webpage</title>
+  <style>
+    /* CSS for the navbar */
+    .navbar {
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    
+    .logo {
+      height: 60px;
+    }
+
+    .logo img{
+        height: 60px;
+    }
+    
+    .login {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        border-radius: 5px;
+      color: white;
+      height: 20px;
+      width: 100px;
+      background-color: rgb(108, 108, 240);
+      border: none;
+      padding: 5px 10px;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+    
+    .nav-menu li {
+      margin-right: 20px;
+      font-size: 1.2rem;
+    }
+
+    .nav-menu li a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    /* CSS for the body sections */
+    .body-container {
+      display: flex;
+      height: 500px;
+    }
+    
+    .left-section {
+      flex: 1;
+      padding: 20px;
+      background-color: white;
+    }
+    
+    .right-section {
+      flex: 1;
+      padding: 20px;
+      background-color: white;
+    }
+    
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+      }
+      
+      .logo {
+        margin-bottom: 10px;
+      }
+      
+      .nav-menu {
+        margin-bottom: 10px;
+      }
+      
+      .nav-menu li {
+        margin-right: 10px;
+        font-size: 1rem;
+      }
+      
+      .login {
+        margin-right: 0;
+        width: auto;
+      }
+      
+      .body-container {
+        flex-direction: column;
+      }
+      
+      .left-section, .right-section {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+        <img src="./logo.png" alt="">
+    </div>
+    <ul class="nav-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <a href="#" class="login">Login</a>
+  </div>
+
+  <!-- Body Sections -->
+  <div class="body-container">
+    <div class="left-section">
+      <img src="./Screenshot (382).png" alt="">
+    </div>
+    <div class="right-section">
+      <img src="./Screenshot (381).png" alt="">
+    </div>
+  </div>
+</body>
+</html>
